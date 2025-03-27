@@ -1,0 +1,123 @@
+/*Estilos del header*/
+header{
+    background-color: rgb(50, 13, 136);/*establece el color de fondo*/
+    padding: 15px;/*Establece un espacio interno de 15px del contendio*/
+    border-radius: 10px 10px 0 0;/*Establece bordes en el header*/
+}
+/*Estilos en el body*/
+body {
+    margin-top: 4px; /* Margen superior de 4px */
+    margin-left: 4px; /* Margen izquierdo de 4px */
+    margin-right: 4px; /* Margen derecho de 4px */
+    font-family: 'Arial', sans-serif; /* Fuente de texto Arial */
+    font-size: 16px; /* Tamaño de fuente de 16px */
+    text-align: justify;/*Se alinea el texto justificado*/
+}
+/*Estilos en el menu*/
+.Menu {
+    display: block;/*Establece que el menu sea tratado como bloque*/
+    background-color: rgb(50,13,136);/*Establece color de fondo al menu*/
+    padding: 10px;/*Establece espacios internos de 10px al menu*/
+    margin-top: 0;/*Establece para que no haya margen superior*/
+    margin-bottom: 0;/*Establece para que no haya margen inferior*/
+}
+/*Estilos de los enlaces  del menu*/
+.Menu li a{
+    text-decoration: none;/*Establece que el texto de los enlaces no esten decorados, sino que esten como un texto normal*/
+    text-align: center;/*Alinea el textos de los hipervinculos de manera centrada*/
+    padding: 10px;/*Establece un espacio interno de 10px de los hipervinculos del menu*/
+    color:black;/*Estabelce el color negro al texto de los hipervinculos del menu*/
+    transition: font-size 0.3s ease ;/*Establece una transición de 0,3 segundos a las palabras*/
+    
+    
+}
+/*Estilos de la lista del menu*/
+.Menu li{
+    display:inline-block/*Establece para que la lista del menu sea tratado como bloques en linea*/
+}
+/*Estilos de los enlaces del menu*/
+.Menu li a:hover{
+    color: white;/*Establece que cuando pase el cursor en el texto del menu, estos cambien de color a blanco y cuando el cursor de vaya, vuelva al color negro*/
+    font-size:1.2em;/*cuando el cursor pase por las palbras del menu, estas aumentaran de tamaño, pero cuando el cursor se vaya, el tamaño vuelva a la normalidad*/
+}
+/*Estilos de la imgenes de la secciones de CSS y Javascript los caules poseen un id de imagen*/
+#imagen{
+    height: 250px;/*Establece la altura de la imagen a 250px*/
+    width: auto;/*Establece que la anchura de acopple al valor de la altura, respetando su valor*/
+    transition: transform 0.3s ease;/*Establece una transición de 0,3segundos de las iamgenes*/
+}
+/*Estilos de las imagenes de la seccios de CSS y JavaScript con iD= imagen*/
+#imagen:hover{
+    transform: scale(1.2);/*Cuando pase el cursor por medios las imagenes la escala va aumentar, pero cuando el cursos se vaya, las imagenes volveran a la escla normal*/ 
+}
+/*Estilos a los nombres de los autores a los incios de los parrafos en las secciones de CSS y Javascript con id=j, ya que estos redirigen a la fuente de donde se saco la información*/
+#j{
+    text-decoration: none;/*A estos nombres se les establece para que no tengan decoraciones*/
+}
+/*Estilos a las fuentes de la tabla y a los textos que redirigen al menu con ID=n*/
+#n{
+    color: black;/*Establece el color a negro*/
+    text-decoration: none;/*Establece que no hayan decoarciones al texto*/
+    transition: font-size 0.3s ease/*Establece una transición de 0,3 segundos a las palabras*/
+    
+}
+/*Estilos al hover de las palabras que poseen id=n*/
+#n:hover{
+     font-size:1.2em;/*cuando el cursor pase por las palabras, estas aumentaran, mientras que cuando el cursor se vaya esta volvera a su tamaño original*/
+     color:rgb(31, 10, 90);/*Cuando el cursor pase por la palabras estas cambien al color azul, pero cuando el cursor se vaya, estas vuelvan al color negro*/
+}
+/*Estilos de los titulos de tamaño h2*/
+h2{
+    background-color: rgb(50, 23, 100);/*Establece el color de fondo*/
+    padding: 10px;/*Establece espacios internos de 10px*/
+    margin-top: 0;/*establece para que no haya margen superior*/
+}
+/*Estilos de las celdas*/
+td{
+    margin: 3px;/*Establece un margen de 3px a la celdas*/
+}
+/*Estilos a la tabla*/
+table{
+    border-spacing: 2px;/*Establec un espacio entre celdas de 2px*/
+    text-align: center;/*Alinea el texto de la tabla para que este centrada*/
+    border-radius: 5px;/*A la tabla se le establec bordes de 5px*/
+    border-color: rgb(30, 33, 177); /*A los bordes de la tabla se le establece un color*/
+}
+/*estilos a la tabbla segun la condición, en este caso cuando la pantalla llegue a 690px*/
+@media(max-width:690px){
+    table{
+        font-size: 6px;/*Cuando se cumpla esta condición el tamaño de las letras dentro de las celdas cambian a 6px*/
+        width: 100%/*el ancho de la tabla coupara el 100% de la página cuando*/
+    }
+    td img{
+        width: 90px;/*Cuando se cumpla la condición el ancho de las imagenes dentro de las celdas tendran un ancho de 90px*/
+        height: 30px;/*Cuando se cumpla la condición el ancho de las imagenes dentro de las celdas tendran un alto de 30px*/
+    }
+    td img:hover{
+        transform: scale(1.9);/*Cuando el cursor pase por la imagenes esta se escalara, pero cunado el cursor se vaya esta volvera a su tamaño orginal*/
+    }
+}
+/*Estilos a las imagnes dentro de las celdas*/
+img{
+    height: 150px;/*Establece un alto de imagen de 150px*/
+    width: 300px;/*Establece un ancho de imagen de 300px*/
+    transition: transform 0.3s ease;/*Establece una transición de 0,3segundos a la imagen*/
+}
+/*Estilos de hover a las imagenes*/
+img:hover{
+    transform: scale(1.2);/*Cuando el cursor pase por la imagen esta aumentara su escala, pero cuando el cursor se vaya, esta volvera a su escala original*/
+}
+/*Estilos a los encabezados de la tabla*/
+th{
+    background-color: rgb(83, 43, 148);/*Establece un color de fondo*/
+}
+/*Estilos a las listas sin orden*/
+ul{
+    list-style: none;/*Establece que no haya nigun estilos hacias las listas*/
+}
+/*Estilos de pie de página*/
+footer{
+    background-color: rgb(50,13,136);/*Establece un color de fondo*/
+    padding: 20px;/*Establece un espacio interno de 10px*/
+    border-radius: 0 0 10px 10px;/*Establece los bordes redondos de 10px*/
+}
